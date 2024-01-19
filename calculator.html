@@ -1,0 +1,128 @@
+<html>
+    <head><title>calculator</title></head>
+    <br><br><br><br>
+    <body style="text-align: center; border: 5px;margin: 100px;">
+        <center>
+        <script>
+            var no1,no2,choice;
+            function f1()
+            {
+                document.getElementById("t1").value=document.getElementById("t1").value+"1"
+            }
+            function f2()
+            {
+                document.getElementById("t1").value=document.getElementById("t1").value+"2"
+            }
+            function f3()
+            {
+                document.getElementById("t1").value=document.getElementById("t1").value+"3"
+            }
+            function f4()
+            {
+                document.getElementById("t1").value=document.getElementById("t1").value+"4"
+            }
+            function f5()
+            {
+                document.getElementById("t1").value=document.getElementById("t1").value+"5"
+            }
+            function f6()
+            {
+                document.getElementById("t1").value=document.getElementById("t1").value+"6"
+            }
+            function f7()
+            {
+                document.getElementById("t1").value=document.getElementById("t1").value+"7"
+            }
+            function f8()
+            {
+                document.getElementById("t1").value=document.getElementById("t1").value+"8"
+            }
+            function f9()
+            {
+                document.getElementById("t1").value=document.getElementById("t1").value+"9"
+            }
+            function f10()
+            {
+                document.getElementById("t1").value=document.getElementById("t1").value+"0"
+            }
+            function f11()
+            {
+                document.getElementById("t1").value=document.getElementById("t1").value+"."
+            }
+            function sum()
+            {
+                no1=parseInt(document.getElementById("t1").value)
+                document.getElementById("t1").value=" "
+                choice=1
+            } 
+            function sub()
+            {
+                no1=parseInt(document.getElementById("t1").value)
+                document.getElementById("t1").value=" "
+                choice=2
+            }
+            function mul()
+            {
+                no1=parseInt(document.getElementById("t1").value)
+                document.getElementById("t1").value=" "
+                choice=3
+            }
+            function div()
+            {
+                no1=parseInt(document.getElementById("t1").value)
+                document.getElementById("t1").value=" "
+                choice=4
+            }
+            function mod()
+            {
+                no1=parseInt(document.getElementById("t1").value)
+                document.getElementById("t1").value=" "
+                choice=5
+            }
+            function result()
+            {
+                no2=parseInt(document.getElementById("t1").value)
+                if(choice==1)
+                document.getElementById("t1").value=no1+no2
+                else if(choice==2)
+                document.getElementById("t1").value=no1-no2
+                else if(choice==3)
+                document.getElementById("t1").value=no1*no2
+                else if(choice==4)
+                document.getElementById("t1").value=no1/no2
+                else if(choice==5)
+                document.getElementById("t1").value=no1%no2
+            }
+            function reset()
+            {
+                document.getElementById("t1").value=" "
+            }
+        </script>
+        <div style="border-style: double;padding: 10px;width: 150px;background-color: teal;border-radius: 10px;">
+        <input type="number" id="t1" style="width: 150px;" placeholder="enter your number">
+        <br><br>
+        <button onclick="f1()" value="1" style="border-radius: 20px;margin-bottom: 0.5% ; background-color: lightgray">1</button>
+        <button id="b2" onclick="f2()" value="2" style="border-radius: 20px;background-color: lightgray">2</button>
+        <button id="b3" onclick="f3()" value="3" style="border-radius: 20px;background-color: lightgray">3</button>
+        <button id="b10" onclick="sum()" value="+" style="border-radius: 20px;margin-bottom: 0.5%;background-color: orange">+</button>
+        <br>
+        <button id="b4" onclick="f4()" value="4" style="border-radius: 20px;margin-bottom: 0.5%;background-color: lightgray" >4</button>
+        <button id="b5" onclick="f5()" value="5" style="border-radius: 20px;background-color: lightgray">5</button>
+        <button id="b6" onclick="f6()" value="6" style="border-radius: 20px;background-color: lightgray">6</button>
+        <button id="b11" onclick="sub()" value="-" style="border-radius: 20px;background-color: orange">-</button>
+        <br>
+        <button id="b7" onclick="f7()" value="7" style="border-radius: 20px;margin-bottom: 0.5%;background-color: lightgray">7</button>
+        <button id="b8" onclick="f8()" value="8" style="border-radius: 20px;background-color: lightgray">8</button>
+        <button id="b9" onclick="f9()" value="9" style="border-radius: 20px;background-color: lightgray">9</button>
+        <button id="b14" onclick="mul()" value="*" style="border-radius: 20px;background-color: orange">*</button>
+        <br>
+        <button id="b16" onclick="f10()" value="0" style="border-radius: 20px;background-color: lightgray;margin-bottom: 0.5%;">0</button>
+        <button id="b17" onclick="f11()" value="." style="border-radius: 20px;background-color: lightgray;">.</button>
+        <button id="b18" onclick="mod()" value="%" style="border-radius: 20px;background-color: orange">%</button>
+        <button id="b15" onclick="div()" value="/" style="border-radius: 20px;background-color: orange;">/</button><br>
+        <button id="b13" onclick="reset()" value="reset" style="border-radius: 10px;width: 35%;margin-bottom: 0.5%;background-color: black;color: beige;">reset</button>
+        <button id="b12" onclick="result()"  value="=" style="border-radius: 10px;width: 35%;background-color: orange;">=</button>
+    </div>
+</center>
+    </body>
+</html>
